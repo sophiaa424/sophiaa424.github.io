@@ -30,14 +30,31 @@
     header {
       margin-bottom: 36px;
     }
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .headshot {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--border);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+    .header-text {
+      flex: 1;
+    }
     h1 {
       font-size: 2.3rem;
-      margin: 0 0 10px 0;
+      margin: 0 0 8px 0;
       letter-spacing: -0.5px;
       color: var(--text);
     }
     .contact-links {
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       font-size: 0.95rem;
       color: var(--muted);
     }
@@ -50,7 +67,7 @@
       text-decoration: underline;
     }
     .personal-statement {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       color: var(--muted);
       margin: 0;
       font-weight: 500;
@@ -144,21 +161,38 @@
       border-top: 1px solid var(--border);
       margin: 20px 0;
     }
+    @media (max-width: 600px) {
+      .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .headshot {
+        width: 110px;
+        height: 110px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Sophia Y. Choi</h1>
-      <div class="contact-links">
-        <span>Ogdensburg, NJ</span> • 
-        <a href="mailto:syc68@scarletmail.rutgers.edu">Email</a> • 
-        <a href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="header-content">
+        <!-- Headshot Image -->
+        <img src="Headshot.jpg" alt="Sophia Y. Choi headshot" class="headshot" />
+        
+        <div class="header-text">
+          <h1>Sophia Y. Choi</h1>
+          <div class="contact-links">
+            <span>Ogdensburg, NJ</span>[cite: 1] • 
+            <a href="mailto:syc68@scarletmail.rutgers.edu">Email</a>[cite: 1] • 
+            <a href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener">LinkedIn</a>[cite: 1]
+          </div>
+          <!-- Rubric Requirement: One-sentence personal statement -->
+          <p class="personal-statement">
+            Driven Supply Chain Management student at Rutgers Business School leveraging Lean Six Sigma principles and hands-on inventory tracking to streamline operations and enhance organizational efficiency.[cite: 1]
+          </p>
+        </div>
       </div>
-      <!-- Rubric Requirement: One-sentence personal statement -->
-      <p class="personal-statement">
-        Driven Supply Chain Management student at Rutgers Business School leveraging Lean Six Sigma principles and hands-on inventory tracking to streamline operations and enhance organizational efficiency.
-      </p>
     </header>
 
     <!-- Rubric Requirement: Skills Section -->
@@ -167,21 +201,21 @@
       <div class="skills-group">
         <h3>Certifications &amp; Tools</h3>
         <ul class="skills-grid">
-          <li class="skill-tag">Lean Six-Sigma White Belt (C.S.S.C)</li>
-          <li class="skill-tag">Microsoft Excel Certified</li>
-          <li class="skill-tag">Microsoft Office Suite</li>
-          <li class="skill-tag">Database Management</li>
-          <li class="skill-tag">Inventory Management Systems</li>
+          <li class="skill-tag">Lean Six-Sigma White Belt (C.S.S.C)</li>[cite: 1]
+          <li class="skill-tag">Microsoft Excel Certified</li>[cite: 1]
+          <li class="skill-tag">Microsoft Office Suite</li>[cite: 1]
+          <li class="skill-tag">Database Management</li>[cite: 1]
+          <li class="skill-tag">Inventory Management Systems</li>[cite: 1]
         </ul>
       </div>
       <div class="skills-group" style="margin-top: 14px;">
         <h3>Core Competencies &amp; Coursework</h3>
         <ul class="skills-grid">
-          <li class="skill-tag">Demand Planning &amp; Fulfillment</li>
-          <li class="skill-tag">Quality Control &amp; Inspection</li>
-          <li class="skill-tag">Replenishment Planning</li>
-          <li class="skill-tag">Process Optimization</li>
-          <li class="skill-tag">Cross-Functional Communication</li>
+          <li class="skill-tag">Demand Planning &amp; Fulfillment</li>[cite: 1]
+          <li class="skill-tag">Quality Control &amp; Inspection</li>[cite: 1]
+          <li class="skill-tag">Replenishment Planning</li>[cite: 1]
+          <li class="skill-tag">Process Optimization</li>[cite: 1]
+          <li class="skill-tag">Cross-Functional Communication</li>[cite: 1]
         </ul>
       </div>
     </section>
@@ -193,12 +227,12 @@
       <div class="project-card">
         <div class="project-header">
           <h3 class="project-title">Conference Housing &amp; Asset Inventory System</h3>
-          <span class="project-role">Rutgers Residence Life Conference Services</span>
+          <span class="project-role">Rutgers Residence Life Conference Services</span>[cite: 1]
         </div>
         <p class="project-desc">
-          Audited, tracked, and reconciled inventory for thousands of key sets, digital access cards, and event materials using an online database. Streamlined daily turnover workflows and quality control check-in/check-out procedures across multiple campus residential facilities.
+          Audited, tracked, and reconciled inventory for thousands of key sets, digital access cards, and event materials using an online database. Streamlined daily turnover workflows and quality control check-in/check-out procedures across multiple campus residential facilities.[cite: 1]
         </p>
-        <a class="project-link" href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener">View Operational Experience &rarr;</a>
+        <a class="project-link" href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener">View Operational Experience &rarr;</a>[cite: 1]
       </div>
 
       <hr class="divider" />
@@ -206,12 +240,12 @@
       <div class="project-card">
         <div class="project-header">
           <h3 class="project-title">Inventory Control &amp; Replenishment Optimization</h3>
-          <span class="project-role">West Milford Food Pantry</span>
+          <span class="project-role">West Milford Food Pantry</span>[cite: 1]
         </div>
         <p class="project-desc">
-          Supervised inventory audits for high-volume incoming goods, tracking stock depletion trends to guide weekly replenishment schedules. Formulated order distribution packages based on household size, priority need, and product shelf life.
+          Supervised inventory audits for high-volume incoming goods, tracking stock depletion trends to guide weekly replenishment schedules. Formulated order distribution packages based on household size, priority need, and product shelf life.[cite: 1]
         </p>
-        <a class="project-link" href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener">View Inventory Workflow &rarr;</a>
+        <a class="project-link" href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener">View Inventory Workflow &rarr;</a>[cite: 1]
       </div>
 
       <hr class="divider" />
@@ -219,12 +253,12 @@
       <div class="project-card">
         <div class="project-header">
           <h3 class="project-title">Academic Services Directory &amp; Database Modernization</h3>
-          <span class="project-role">Rutgers Office of Advising</span>
+          <span class="project-role">Rutgers Office of Advising</span>[cite: 1]
         </div>
         <p class="project-desc">
-          Executed departmental database updates, access management reviews, and inter-departmental directory structures to enhance appointment scheduling and service routing for hundreds of undergraduate students.
+          Executed departmental database updates, access management reviews, and inter-departmental directory structures to enhance appointment scheduling and service routing for hundreds of undergraduate students.[cite: 1]
         </p>
-        <a class="project-link" href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener">View Administrative Project &rarr;</a>
+        <a class="project-link" href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener">View Administrative Project &rarr;</a>[cite: 1]
       </div>
     </section>
   </div>
