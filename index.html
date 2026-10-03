@@ -1,266 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sophia Y. Choi | Portfolio</title>
-  <style>
-    :root {
-      --bg: #f8fafc;
-      --card-bg: #ffffff;
-      --text: #0f172a;
-      --muted: #475569;
-      --primary: #cc0033; /* Rutgers scarlet accent */
-      --primary-hover: #990026;
-      --tag-bg: #fdf2f2;
-      --border: #e2e8f0;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-      background-color: var(--bg);
-      margin: 0;
-      padding: 48px 20px;
-    }
-    .container {
-      max-width: 780px;
-      margin: 0 auto;
-    }
-    header {
-      margin-bottom: 36px;
-    }
-    .header-content {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-    }
-    .headshot {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--border);
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-      flex-shrink: 0;
-    }
-    .header-text {
-      flex: 1;
-    }
-    h1 {
-      font-size: 2.3rem;
-      margin: 0 0 8px 0;
-      letter-spacing: -0.5px;
-      color: var(--text);
-    }
-    .contact-links {
-      margin-bottom: 12px;
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
-    .contact-links a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .contact-links a:hover {
-      text-decoration: underline;
-    }
-    .personal-statement {
-      font-size: 1.1rem;
-      color: var(--muted);
-      margin: 0;
-      font-weight: 500;
-      line-height: 1.5;
-    }
-    section {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 28px;
-      margin-bottom: 24px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-    }
-    h2 {
-      margin-top: 0;
-      font-size: 1.35rem;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 10px;
-      color: var(--text);
-    }
-    .skills-group {
-      margin-bottom: 16px;
-    }
-    .skills-group:last-child {
-      margin-bottom: 0;
-    }
-    .skills-group h3 {
-      font-size: 0.95rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--muted);
-      margin: 0 0 8px 0;
-    }
-    .skills-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      padding: 0;
-      list-style: none;
-      margin: 0;
-    }
-    .skill-tag {
-      background: var(--tag-bg);
-      color: var(--primary);
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-weight: 600;
-      font-size: 0.88rem;
-      border: 1px solid #fed7d7;
-    }
-    .project-card {
-      margin-bottom: 22px;
-    }
-    .project-card:last-child {
-      margin-bottom: 0;
-    }
-    .project-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 6px;
-    }
-    .project-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin: 0;
-    }
-    .project-role {
-      font-size: 0.88rem;
-      color: var(--muted);
-      font-weight: 500;
-    }
-    .project-desc {
-      margin: 0 0 10px 0;
-      color: #334155;
-      font-size: 0.95rem;
-    }
-    .project-link {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.92rem;
-    }
-    .project-link:hover {
-      text-decoration: underline;
-    }
-    .divider {
-      border: 0;
-      border-top: 1px solid var(--border);
-      margin: 20px 0;
-    }
-    @media (max-width: 600px) {
-      .header-content {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .headshot {
-        width: 110px;
-        height: 110px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia Y. Choi | Rutgers Business School Portfolio</title>
+    <!-- Use Tailwind CSS via CDN - No local installation required! -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional: Add smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <div class="header-content">
-        <!-- Headshot Image -->
-        <img src="Headshot.jpg" alt="Sophia Y. Choi headshot" class="headshot" />
-        
-        <div class="header-text">
-          <h1>Sophia Y. Choi</h1>
-          <div class="contact-links">
-            <span>Ogdensburg, NJ</span> • 
-            <a href="mailto:syc68@scarletmail.rutgers.edu">Email</a> • 
-            <a href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-          <!-- Rubric Requirement: One-sentence personal statement -->
-          <p class="personal-statement">
-            Driven Supply Chain Management student at Rutgers Business School leveraging Lean Six Sigma principles and hands-on inventory tracking to streamline operations and enhance organizational efficiency.
-          </p>
-        </div>
-      </div>
-    </header>
+<body class="bg-slate-50 text-slate-900 flex flex-col min-h-screen">
 
-    <!-- Rubric Requirement: Skills Section -->
-    <section>
-      <h2>Skills &amp; Certifications</h2>
-      <div class="skills-group">
-        <h3>Certifications &amp; Tools</h3>
-        <ul class="skills-grid">
-          <li class="skill-tag">Lean Six-Sigma White Belt (C.S.S.C)</li>
-          <li class="skill-tag">Microsoft Excel Certified</li>
-          <li class="skill-tag">Microsoft Office Suite</li>
-          <li class="skill-tag">Database Management</li>
-          <li class="skill-tag">Inventory Management Systems</li>
-        </ul>
-      </div>
-      <div class="skills-group" style="margin-top: 14px;">
-        <h3>Core Competencies &amp; Coursework</h3>
-        <ul class="skills-grid">
-          <li class="skill-tag">Demand Planning &amp; Fulfillment</li>
-          <li class="skill-tag">Quality Control &amp; Inspection</li>
-          <li class="skill-tag">Replenishment Planning</li>
-          <li class="skill-tag">Process Optimization</li>
-          <li class="skill-tag">Cross-Functional Communication</li>
-        </ul>
-      </div>
+    <!-- Header / Navigation -->
+    <nav class="bg-white border-b border-slate-100 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="text-2xl font-bold text-red-700">RBS</span>
+                <div class="h-6 w-px bg-slate-200"></div>
+                <h1 class="text-xl font-semibold tracking-tight">Sophia's Portfolio</h1>
+            </div>
+            <div class="flex items-center gap-6 text-sm font-medium text-slate-700">
+                <a href="#about" class="hover:text-red-700 transition">About</a>
+                <a href="#skills" class="hover:text-red-700 transition">Skills</a>
+                <a href="#projects" class="hover:text-red-700 transition">Projects</a>
+                <a href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener" class="bg-slate-900 text-white px-5 py-2.5 rounded-full text-xs font-semibold hover:bg-red-700 transition">LinkedIn Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section / Personal Statement (Rubric Item 1) -->
+    <main id="about" class="flex-grow max-w-7xl mx-auto px-6 py-16 md:py-24">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            
+            <!-- Student Photo & Basic Info -->
+            <div class="md:col-span-4 flex flex-col items-center text-center">
+                <img src="Headshot.jpg" alt="Photo of Sophia Y. Choi, Rutgers Business School Student" class="w-48 h-48 rounded-full shadow-lg border-4 border-white mb-6 object-cover">
+                <h2 class="text-2xl font-extrabold text-slate-950">Sophia Y. Choi</h2>
+                <p class="text-red-700 font-medium">Rutgers Business School</p>
+                <p class="text-slate-600 text-sm mt-1">Class of 2028 • B.S. in Supply Chain Management</p>
+            </div>
+
+            <!-- Intro Text & One-Sentence Personal Statement -->
+            <div class="md:col-span-8 space-y-6">
+                <span class="inline-flex items-center rounded-full bg-red-100 px-3 py-1 text-xs font-semibold text-red-800">
+                    Major: Supply Chain Management
+                </span>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-950 tracking-tighter">Operational precision, lean strategy, rooted at Rutgers.</h3>
+                <!-- Rubric Requirement: One-sentence personal statement -->
+                <p class="text-xl text-slate-600 leading-relaxed max-w-3xl">
+                    Driven Supply Chain Management student at Rutgers Business School leveraging Lean Six Sigma principles and hands-on inventory tracking to streamline operations and enhance organizational efficiency.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="mailto:syc68@scarletmail.rutgers.edu" class="bg-white border border-slate-200 text-slate-950 px-6 py-3 rounded-full text-sm font-semibold shadow-sm hover:shadow-lg transition">Email Me</a>
+                    <a href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener" class="text-sm font-semibold px-6 py-3 text-slate-700 hover:text-red-700">LinkedIn Profile →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Skills Section (Rubric Item 2) -->
+    <section id="skills" class="bg-slate-100 py-16 md:py-20 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-3xl font-extrabold text-slate-950 mb-3 tracking-tight">Core Competencies &amp; Technical Skills</h3>
+            <p class="text-slate-600 mb-8 max-w-2xl">Highlighted professional methodologies, certifications, and technical tools developed through academic coursework and operational roles.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Certifications & Software -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h4 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <span class="h-2.5 w-2.5 rounded-full bg-red-700"></span> Certifications &amp; Software Tools
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-semibold bg-red-50 text-red-700 border border-red-200 px-3 py-1.5 rounded-full">Lean Six-Sigma White Belt (C.S.S.C)</span>
+                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full">Microsoft Excel Certified</span>
+                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full">Microsoft Office Suite</span>
+                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full">Database Management</span>
+                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full">Inventory Control Systems</span>
+                    </div>
+                </div>
+
+                <!-- Domain Knowledge & Coursework -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                    <h4 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <span class="h-2.5 w-2.5 rounded-full bg-red-700"></span> Supply Chain &amp; Operations
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-semibold bg-red-50 text-red-700 border border-red-200 px-3 py-1.5 rounded-full">Demand Planning &amp; Fulfillment</span>
+                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full">Quality Control &amp; Inspection</span>
+                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full">Replenishment Planning</span>
+                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full">Process Optimization</span>
+                        <span class="text-xs font-semibold bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full">Cross-Functional Communication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Rubric Requirement: Projects Section (3 Projects/Case Studies) -->
-    <section>
-      <h2>Featured Operations &amp; Projects</h2>
-      
-      <div class="project-card">
-        <div class="project-header">
-          <h3 class="project-title">Conference Housing &amp; Asset Inventory System</h3>
-          <span class="project-role">Rutgers Residence Life Conference Services</span>
+    <!-- Projects Grid Section (Rubric Item 3) -->
+    <section id="projects" class="bg-white py-16 md:py-24 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-3xl font-extrabold text-slate-950 mb-4 tracking-tight">Operational Pillars: Featured Projects</h3>
+            <p class="text-slate-600 mb-12 max-w-2xl">This grid highlights operations, inventory management, and database leadership projects demonstrating an analytical approach to organizational workflows.</p>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1: Logistics & Inventory Control -->
+                <div class="group border border-slate-100 rounded-2xl p-8 bg-white flex flex-col gap-5 shadow-sm hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">Logistics</span>
+                        <div class="flex gap-2">
+                            <span class="text-slate-400 text-xs">Audits</span>
+                            <span class="text-slate-400 text-xs">Database</span>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-semibold text-slate-950">Conference Housing &amp; Asset Tracking</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-grow">
+                        Audited and tracked thousands of keys, digital access cards, and event supplies via an online database while coordinating daily check-in workflows and turnover inspections.
+                    </p>
+                    <div class="h-px bg-slate-100 w-full mt-auto"></div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Rutgers Conference Services</span>
+                        <a href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener" class="text-xs font-semibold text-red-700 hover:underline">View Operations →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Supply Chain Planning -->
+                <div class="group border border-slate-100 rounded-2xl p-8 bg-white flex flex-col gap-5 shadow-sm hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold uppercase tracking-widest text-sky-700 bg-sky-100 px-3 py-1 rounded-full">Planning</span>
+                        <div class="flex gap-2">
+                            <span class="text-slate-400 text-xs">Forecasting</span>
+                            <span class="text-slate-400 text-xs">Excel</span>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-semibold text-slate-950">Food Pantry Inventory &amp; Replenishment</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-grow">
+                        Monitored stock depletion trends and inventory controls across high-volume shipments to streamline weekly replenishment schedules and balance order allocation with demand.
+                    </p>
+                    <div class="h-px bg-slate-100 w-full mt-auto"></div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-slate-500">West Milford Food Pantry</span>
+                        <a href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener" class="text-xs font-semibold text-red-700 hover:underline">View Workflow →</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Systems & Administration -->
+                <div class="group border border-slate-100 rounded-2xl p-8 bg-white flex flex-col gap-5 shadow-sm hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold uppercase tracking-widest text-amber-700 bg-amber-100 px-3 py-1 rounded-full">Systems</span>
+                        <div class="flex gap-2">
+                            <span class="text-slate-400 text-xs">Directory</span>
+                            <span class="text-slate-400 text-xs">Security</span>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-semibold text-slate-950">Academic Advising Database Modernization</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-grow">
+                        Maintained inter-departmental student record directories, updated access controls, and managed scheduling workflows for hundreds of undergraduate student advising appointments.
+                    </p>
+                    <div class="h-px bg-slate-100 w-full mt-auto"></div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-slate-500">Rutgers Office of Advising</span>
+                        <a href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener" class="text-xs font-semibold text-red-700 hover:underline">View Project →</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <p class="project-desc">
-          Audited, tracked, and reconciled inventory for thousands of key sets, digital access cards, and event materials using an online database. Streamlined daily turnover workflows and quality control check-in/check-out procedures across multiple campus residential facilities.
-        </p>
-        <a class="project-link" href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener">View Operational Experience &rarr;</a>
-      </div>
-
-      <hr class="divider" />
-
-      <div class="project-card">
-        <div class="project-header">
-          <h3 class="project-title">Inventory Control &amp; Replenishment Optimization</h3>
-          <span class="project-role">West Milford Food Pantry</span>
-        </div>
-        <p class="project-desc">
-          Supervised inventory audits for high-volume incoming goods, tracking stock depletion trends to guide weekly replenishment schedules. Formulated order distribution packages based on household size, priority need, and product shelf life.
-        </p>
-        <a class="project-link" href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener">View Inventory Workflow &rarr;</a>
-      </div>
-
-      <hr class="divider" />
-
-      <div class="project-card">
-        <div class="project-header">
-          <h3 class="project-title">Academic Services Directory &amp; Database Modernization</h3>
-          <span class="project-role">Rutgers Office of Advising</span>
-        </div>
-        <p class="project-desc">
-          Executed departmental database updates, access management reviews, and inter-departmental directory structures to enhance appointment scheduling and service routing for hundreds of undergraduate students.
-        </p>
-        <a class="project-link" href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener">View Administrative Project &rarr;</a>
-      </div>
     </section>
-  </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-300 py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 text-sm text-center">
+            <p class="font-semibold text-white mb-2">Sophia Y. Choi • Rutgers Business School Student</p>
+            <p>Supply Chain Management • Ogdensburg, NJ</p>
+            <div class="flex justify-center gap-6 mt-6">
+                <a href="https://www.linkedin.com/in/sophia-y-choi" target="_blank" rel="noopener" class="hover:text-white">LinkedIn</a>
+                <a href="mailto:syc68@scarletmail.rutgers.edu" class="hover:text-white">Email</a>
+            </div>
+            <p class="mt-8 text-slate-500 text-xs">&copy; 2026. Built with Tailwind CSS via CDN. Hosted on GitHub Pages.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
